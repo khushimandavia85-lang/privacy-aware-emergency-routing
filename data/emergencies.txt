@@ -1,0 +1,6 @@
+# Emergency ID | Severity | Location | Waiting Time | Patient Token
+
+101 5 4 12 P-A72X
+102 3 2 8 P-B81K
+103 4 3 5 P-C93M
+104 2 1 15 P-D44Q

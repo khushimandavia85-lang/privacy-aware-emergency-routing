@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy-Aware Emergency Response</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <h1>🚑 Emergency Response System</h1>
+
+            <p>
+                Privacy-Aware Intelligent Emergency
+                Response and Dynamic Ambulance Routing
+            </p>
+        </div>
+
+        <div class="status">
+            ● SYSTEM ONLINE
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <h3>Active Emergencies</h3>
+
+                <p id="activeCount">03</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Waiting Emergencies</h3>
+
+                <p id="waitingCount">02</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Available Ambulances</h3>
+
+                <p id="ambulanceCount">04</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>System Status</h3>
+
+                <p>Online</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <h2>Emergency Queue</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Severity</th>
+                        <th>Location</th>
+                        <th>Waiting</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>E101</td>
+                        <td>
+                            <span class="high">
+                                HIGH
+                            </span>
+                        </td>
+                        <td>Location D</td>
+                        <td>12 min</td>
+                        <td>Waiting</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>E102</td>
+                        <td>
+                            <span class="medium">
+                                MEDIUM
+                            </span>
+                        </td>
+                        <td>Location B</td>
+                        <td>8 min</td>
+                        <td>Waiting</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>E103</td>
+                        <td>
+                            <span class="high">
+                                HIGH
+                            </span>
+                        </td>
+                        <td>Location C</td>
+                        <td>5 min</td>
+                        <td>Active</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section class="panel">
+
+            <h2>Ambulance Routing</h2>
+
+            <div class="route">
+
+                <div class="location">
+                    🚑 Ambulance Base
+                </div>
+
+                <div class="arrow">
+                    ↓
+                </div>
+
+                <div class="location">
+                    📍 Location C
+                </div>
+
+                <div class="arrow">
+                    ↓
+                </div>
+
+                <div class="location hospital">
+                    🏥 Hospital
+                </div>
+
+            </div>
+
+
+            <div class="route-info">
+
+                <div>
+                    <strong>Route:</strong>
+                    Base → C → Hospital
+                </div>
+
+                <div>
+                    <strong>Distance:</strong>
+                    8 km
+                </div>
+
+                <div>
+                    <strong>Algorithm:</strong>
+                    Dijkstra
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="actions">
+
+            <button onclick="registerEmergency()">
+                Register Emergency
+            </button>
+
+            <button onclick="findRoute()">
+                Find Best Route
+            </button>
+
+            <button onclick="showPriority()">
+                View Priority Queue
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Privacy-Aware Emergency Routing System
+        </p>
+
+        <p>
+            DSA Project — 40% Prototype
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
